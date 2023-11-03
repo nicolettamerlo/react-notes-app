@@ -1,0 +1,46 @@
+.modal {
+    position: absolute;
+    bottom: 0;    
+    width: 100%;
+    text-align: center;
+    border-radius: .2rem;
+    background-color: rgba($dark, .85);
+    color: $lightGray;
+    z-index: 60;
+    // animation: fadeIn .7s;
+    &-header {
+        text-align: right;
+        padding: 1.2rem 0 .8rem 0;
+        border-bottom: .1rem solid $light;
+        text-align: center;
+        &-close {
+            position: absolute;
+            top: .4rem;
+            right: .4rem;
+            background-color: transparent;
+            border: 0;
+            color: $lightGray;
+            &:hover {
+                color: white;
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-message {
+        font-size: 1.6rem;
+        padding: 1rem .5rem .5rem .5rem;
+        line-height: 1.2;
+        letter-spacing: .05rem;
+    }
+    &-options {
+        @include flex(1.6rem);
+        height: 4.4rem;
+        .btn-outline {
+            height: 2.8rem;
+        }
+    }
+    &-swatches {
+        display: flex;
+    }
+}
+

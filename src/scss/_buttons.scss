@@ -1,0 +1,45 @@
+.btn-outline {
+    @include btn-outline-base;
+    width: 6.5rem;
+    &-delete {
+        background-color: $red;
+        border-color: darken($red, 15);
+        &:hover { background-color: darken($red, 15);}
+    }
+    &-cancel {
+        color: $dark;
+        background-color: $lightGray;
+        &:hover { background-color: $light;}
+    }
+    &-save {
+        background-color: $blueBtn;
+        border-color: darken($blueBtn, 15);
+        &:hover { background-color: darken($blueBtn, 15);}        
+    }
+}
+.btn-icon {
+    color: $darkGray;
+    background-color: transparent;
+    border: 0;
+    &:hover {
+        color: darken($darkGray, 20);
+        scale: 1.1;
+    }
+}
+
+.btn-new {
+    @include btn-outline-base;
+    @include flex(.4rem);
+    background-color: $lightGray;
+    width: 8rem;
+    height: 3rem;
+    color: $dark;
+}
+.btn-color {
+    @include btn-outline-base;
+    width: 3rem;
+    padding: .6rem .5rem;
+    height: 3rem; 
+    color: $yellow;
+    background-color: $yellow;
+}

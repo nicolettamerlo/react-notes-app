@@ -1,0 +1,42 @@
+.header {
+    background-color: $dark;
+    color: $yellow;
+    .header-container {
+        @include max-width;
+        @include flex(0rem);
+        height: 6.5rem;
+        padding: 0 1rem;
+        justify-content: space-between;
+
+        @media screen and (min-width:$mobileL){
+            gap:1rem;
+            height: 5.5rem;
+        }
+        @media screen and (min-width:$laptop){
+            font-size: 6.5rem;
+        }
+    }
+    .title-container {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 1.7rem;
+        letter-spacing: 4px;
+        line-height: 1.6;
+        @media screen and (min-width:$mobileL){
+            font-size: 2.2rem;
+        }
+        @media screen and (min-width:$laptop){
+            font-size: 2.6rem;
+        }
+    }
+    svg {
+        color: $yellow;
+        font-size: 3.4rem;
+        @media screen and (min-width:$laptop){
+            font-size: 3.4rem;
+        }
+    }
+}

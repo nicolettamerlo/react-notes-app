@@ -1,0 +1,43 @@
+// global layout
+.main-container {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet){
+        position: relative;
+    }
+}
+.header {
+    position: fixed;
+    height: 6.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    @media screen and (min-width:$mobileL){
+        height: 5.5rem;
+    }
+}
+.board {
+    background-color: $dark;
+    background-image: radial-gradient($darkGray 1.7000000000000002px, $dark 1.7000000000000002px);
+    background-size: 28px 28px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 6rem 0;
+}
+.footer-container {
+    @media screen and (min-width: $tablet){
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    } 
+}
+
+
+

@@ -1,0 +1,86 @@
+.form-container {
+    background-color: $darkLight;  
+    width: 100%;
+    padding: 3.5rem 2rem 2rem 2rem;
+}
+
+.form {
+    text-align: center;
+    @include max-width;
+    @media screen and (min-width:$laptop){
+        display: grid;
+        grid-template-columns: 1fr 14rem;
+        column-gap: 2.5rem;
+        padding: 0 3rem;
+    }
+    @media screen and (min-width: $extraLarge){
+        padding: 0;
+    }
+    .fields {
+        @include flex(1.5rem, column);
+        margin-bottom: 2rem;
+        @media screen and (min-width:$laptop){
+            flex-direction: row;
+        }
+    }
+    .group-field {
+        @include flex(0, column);
+        text-align: center;
+        width: 100%;
+        @media screen and (min-width:$laptop){
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+    label {
+        margin-top: .5rem;
+        color: $lightGray;
+        order: 2;
+    }
+    input {
+        background-color: $light;
+        padding: .1rem .6rem 0 .6rem;
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        border: 0;
+        height: 3.2rem;
+        border-radius: .3rem;
+        order: 1;
+        width: 100%;
+        @media screen and (min-width:$laptop){
+            order: 2;
+        }
+    }
+    input[type=text]:focus {
+        @include focus;
+    }
+    .buttons {
+        @include flex(2rem);
+        align-items: unset;
+        position: relative;
+    }
+    .modal {
+        width:fit-content;
+        height: fit-content;
+        top: 0;
+        &-header {
+            display: none;
+            margin: 0;
+        }
+        &-swatches {
+            border-radius: .3rem;
+            padding: 1rem 1.2rem;
+            background-color: $dark;
+        }
+        .swatch {
+            width: 3rem;
+            margin: 0 .4rem;
+            height: 3rem;
+        }
+        @media screen and (min-width:$laptop){
+            left: 50%;
+            top: -1.5rem;
+            transform: translate(-50%, 0);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.noteItem {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    break-inside: avoid;
+    position: relative;
+    color: $font-color;
+    box-shadow: .5rem .5rem .7rem rgba(85, 85, 85, 0.7);
+    border-radius: .2rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+    height: fit-content;
+    .note-title {
+        background-color: $plumDark;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 1.4rem 1.5rem;
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+        &:focus {@include focus;}
+    }
+    .note-body {
+        font-size: 1.8rem;
+        padding: 1.5rem 1rem;
+        line-height: 1.6; 
+        &:focus {@include focus;}
+    }
+    .note-footer {
+        background-color: $plum;
+        height: 4.4rem;
+        width: 100%;
+        border-top:.1rem solid $darkGray;
+        padding: 1rem 1.4rem;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        .date {
+            font-size: 1.4rem;
+            color: rgb(94, 94, 95);
+        }
+        .buttons {
+            display: flex;
+            gap: 1.8rem;
+        }
+    }
+
+    @media screen and (min-width: 650px){
+        width: unset;
+        margin: unset;
+    }
+}

@@ -1,0 +1,33 @@
+@mixin focus {
+    outline: none;
+    background-color: $white;
+    border: .3rem solid $blueBtn;
+    color: $dark;
+    border-radius: .3rem;
+}
+@mixin max-width {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+@mixin flex($gap, $direction:row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+    flex-direction: $direction;
+}
+@mixin btn-outline-base {
+    border-radius: .4rem;
+    border: .1rem solid darken($lightGray, 15);
+    color: $light;
+    font-size: 1.3rem;
+    padding: .5rem 0;
+
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: .1rem .1rem .1rem darken($lightGray, 15);
+    &:hover {
+        transform: translate(-.1rem , -.1rem);
+        box-shadow: .1rem .1rem .1rem transparent;
+    }
+}

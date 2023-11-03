@@ -1,0 +1,15 @@
+.notes {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    height: 100%;
+    flex-grow: 1;
+
+    @media screen and (min-width: 1400px){
+        padding: 5rem 4rem;
+    }
+    @media screen and (min-width: $extraLarge){
+        padding: 5rem 0;
+    }
+
+}

@@ -1,0 +1,25 @@
+.loader-container {
+    margin-top: 6rem;
+    text-align: center;
+}
+.loader {
+    border: 2rem solid $white; 
+    border-top: 2rem solid $blueDark; 
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+
+    &-message {
+        margin-top: 3rem;
+        font-size: 2.3rem;
+        color: $light;
+        letter-spacing: 2px;
+    }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
