@@ -2,7 +2,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { contentUpdated, selectNoteById } from '../features/notes/notesSlice';
 
-// eslint-disable-next-line react/prop-types
 function EditModal({setIsEditable, noteId, titleRef, contentRef}) {
 
   const note = useSelector((state) => selectNoteById(state, noteId));

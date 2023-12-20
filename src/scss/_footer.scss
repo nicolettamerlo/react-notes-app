@@ -51,5 +51,14 @@
         color: $grayMedium;
         letter-spacing: 1px;
         @media screen and (min-width:$tablet) {order: 1;}
+        a {
+            color: $mint;
+            &:hover {
+                color:darken($mint, 30)
+            }
+            &:active {
+                color:$white
+            }
+        }
     }
 }
