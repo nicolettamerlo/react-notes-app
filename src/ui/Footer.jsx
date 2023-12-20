@@ -9,12 +9,12 @@ function Footer() {
     <footer className='footer-container'>
       <div className='footer'>
         <div className="footer-links">
-          <Link to='https://codepen.io/nicolettamrlo' target="_blank"><img className="svg-link" src={codepen} alt="codepen" target="_blank" /></Link>
+          <Link to='https://codepen.io/nicolettamerlo' target="_blank"><img className="svg-link" src={codepen} alt="codepen" target="_blank" /></Link>
           <Link to='https://github.com/nicolettamerlo' target="_blank"><GitHubIcon /></Link>  
           <Link to='https://codesandbox.io/u/nicolettamerlo' target="_blank"><img className="svg-link" src={codesandbox} alt="codesandbox" /></Link>       
         </div>
         <span className="footer-copyright">
-          copyright @{new Date().getFullYear()} <Link to='https:nicolettamerlo.com' target="_blank">Nicoletta Merlo</Link>  
+          copyright @{new Date().getFullYear()} <Link to='https://nicolettamerlo.com' target="_blank">Nicoletta Merlo</Link>  
         </span>
         
       </div>
